@@ -132,5 +132,10 @@
       }
     }
   },
-  "defaultProject": "DSAI-Frontend"
+  "defaultProject": "DSAI-Frontend",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
