@@ -3,3 +3,37 @@
 * {
   box-sizing: border-box;
 }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #000;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:focus,
+input:focus,
+button:focus {
+  outline: none;
+}
+
+[type=reset],
+[type=submit],
+button,
+html [type=button] {
+  -webkit-appearance: initial;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
