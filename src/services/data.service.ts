@@ -1,9 +1,6 @@
-import { Injectable, OnInit } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Socket } from 'ngx-socket-io';
-import { Observable, Subject } from 'rxjs';
-import { map, first } from 'rxjs/operators';
-
-const URL = "ws://127.0.0.1:54000";
+import { Observable } from 'rxjs';
 
 export interface Message {
   author: string;
@@ -13,9 +10,7 @@ export interface Message {
 @Injectable({
   providedIn: 'root'
 })
-export class DataService implements OnInit {
-
-  public messages: Subject<Message>;
+export class DataService {
 
   constructor(private socket: Socket) {
   }
@@ -30,9 +25,5 @@ export class DataService implements OnInit {
 
   onDisconnect() : Observable<any> {
     return this.socket.fromEvent('disconnectClient');
-  }
-
-  ngOnInit(){
-
   }
 }
