@@ -1,0 +1,54 @@
+html { font-size: 14px; font-family: Arial, Helvetica, sans-serif; }
+@import 'https://kendo.cdn.telerik.com/2019.2.514/styles/kendo.common-material.min.css';
+@import 'https://kendo.cdn.telerik.com/2019.2.514/styles/kendo.material.min.css';
+@import 'https://kendo.cdn.telerik.com/2019.2.514/styles/kendo.material.mobile.min.css';
+
+@import 'https://kendo.cdn.telerik.com/2019.2.514/styles/kendo.common.min.css';
+@import 'https://kendo.cdn.telerik.com/2019.2.514/styles/kendo.rtl.min.css';
+@import 'https://kendo.cdn.telerik.com/2019.2.514/styles/kendo.default.min.css';
+@import 'https://kendo.cdn.telerik.com/2019.2.514/styles/kendo.mobile.all.min.css';
+
+#gauge-container {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 614px;
+    height: 324px;
+
+    background: transparent url("../../assets/images/car-dashboard.png") no-repeat 50% 50%;
+}
+
+.k-gauge {
+    float: left;
+    width: 220px;
+}
+
+#rpm {
+    width: 142px;
+    height: 147px;
+    margin: 85px 0 0 38px;
+}
+
+.kmH{
+    margin-left: 32.3%;
+    margin-top: 10.5%;
+}
+
+#kmh {
+    width: 216px;
+    height: 216px;
+    margin: 57px 0 0 20px;
+}
+
+#fuel {
+    width: 77px;
+    height: 84px;
+
+    margin: 90px 0 0 68px;
+}
+
+#water-temprature {
+    width: 84px;
+    height: 80px;
+
+    margin: -7px 0 0 62px;
+}
