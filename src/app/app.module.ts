@@ -6,14 +6,30 @@ import { AppComponent } from './app.component';
 import { DataService } from '../services/data.service';
 
 const config: SocketIoConfig = { url: 'http://localhost:4444', options: {} };
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { InputsModule } from '@progress/kendo-angular-inputs';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { GridModule } from '@progress/kendo-angular-grid';
+import { ButtonsModule } from '@progress/kendo-angular-buttons';
+import { TestComponent } from './test/test.component';
+import { GaugesModule } from '@progress/kendo-angular-gauges';
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DashboardComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
     SocketIoModule.forRoot(config)
+    InputsModule,
+    BrowserAnimationsModule,
+    GridModule,
+    ButtonsModule,
+    GaugesModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
