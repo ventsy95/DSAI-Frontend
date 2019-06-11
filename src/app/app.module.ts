@@ -9,6 +9,8 @@ import { GridModule } from '@progress/kendo-angular-grid';
 import { ButtonsModule } from '@progress/kendo-angular-buttons';
 import { TestComponent } from './test/test.component';
 import { GaugesModule } from '@progress/kendo-angular-gauges';
+import { LeftBlinkerComponent } from './left-blinker/left-blinker.component';
+import { RightBlinkerComponent } from './right-blinker/right-blinker.component';
 
 
 
@@ -16,7 +18,9 @@ import { GaugesModule } from '@progress/kendo-angular-gauges';
   declarations: [
     AppComponent,
     DashboardComponent,
-    TestComponent
+    TestComponent,
+    LeftBlinkerComponent,
+    RightBlinkerComponent
   ],
   imports: [
     BrowserModule,

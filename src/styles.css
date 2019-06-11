@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import '../node_modules/font-awesome/css/font-awesome.css';
 
 * {
   box-sizing: border-box;
@@ -36,4 +37,15 @@ ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+
+.blinker {
+  font-size: 80px !important;
+  color: white;
+  
+}
+
+.blinker.on {
+  color: yellow;
 }
