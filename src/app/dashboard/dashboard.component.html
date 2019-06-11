@@ -1,30 +1,68 @@
 <div id="example">
     <div id="gauge-container" class="hidden-on-narrow">
-        <div class="rpm">
-                <kendo-radialgauge #radial [transitions]="true" [pointer]="{ value: rpm }" [scale]="{ max: 260 }">
-                        <kendo-radialgauge-scale [minorUnit]="1" [min]="0" [max]="6" [startAngle]=-45 [endAngle]=120>
-                            <kendo-radialgauge-scale-ranges>
-                                <kendo-radialgauge-scale-range [from]="4" [to]="5" color="#ffc700">
-                                </kendo-radialgauge-scale-range>
-                                <kendo-radialgauge-scale-range [from]="5" [to]="6" color="#c20000">
-                                </kendo-radialgauge-scale-range>
-                            </kendo-radialgauge-scale-ranges>
-                        </kendo-radialgauge-scale>
-                    </kendo-radialgauge>
-        </div>
-        <div class="kmH">
-            <kendo-radialgauge #radial [transitions]="true" [pointer]="{ value: kmH }" [scale]="{ max: 260 }">
-                <kendo-radialgauge-scale [minorUnit]="5" [max]="260" [startAngle]=-60 [endAngle]=240>
+        <div>
+            <kendo-radialgauge class="rpm" #radial [transitions]="true" [pointer]="{ value: rpm }"
+                [scale]="{ max: 260 }">
+                <kendo-radialgauge-scale [minorUnit]="1" [minorUnit]="0.2" [min]="0" [max]="6"
+                    [majorTicks]="{width: 1, size: 7, visible: true, color: '#FFFFFF' }"
+                    [minorTicks]="{size: 5, visible: true, color: '#FFFFFF' }" [startAngle]=-45 [endAngle]=120>
+                    <kendo-radialgauge-scale-labels color='#FFFFFF'>
+                    </kendo-radialgauge-scale-labels>
                     <kendo-radialgauge-scale-ranges>
-                        <kendo-radialgauge-scale-range [from]="80" [to]="120" color="#ffc700">
+                        <kendo-radialgauge-scale-range [from]="0" [to]="4" color="none">
                         </kendo-radialgauge-scale-range>
-                        <kendo-radialgauge-scale-range [from]="120" [to]="150" color="#ff7a00">
+                        <kendo-radialgauge-scale-range [from]="4" [to]="5" color="#ffc700">
                         </kendo-radialgauge-scale-range>
-                        <kendo-radialgauge-scale-range [from]="150" [to]="180" color="#c20000">
+                        <kendo-radialgauge-scale-range [from]="5" [to]="6" color="#c20000">
                         </kendo-radialgauge-scale-range>
-                        <kendo-radialgauge-scale-range [from]="180" [to]="210" color="#c20000">
+                    </kendo-radialgauge-scale-ranges>
+                </kendo-radialgauge-scale>
+            </kendo-radialgauge>
+        </div>
+        <div>
+            <kendo-radialgauge class="kmH" #radial [transitions]="true" [pointer]="{ value: kmH }"
+                [scale]="{ max: 260 }">
+                <kendo-radialgauge-scale [majorTicks]="{width: 1, size: 14, visible: true, color: '#FFFFFF'}"
+                    [minorTicks]="{size: 10, visible: true, color: '#FFFFFF'}" [majorUnit]="20" [minorUnit]="2"
+                    [max]="260" [startAngle]=-60 [endAngle]=240>
+                    <kendo-radialgauge-scale-labels color='#FFFFFF'>
+                    </kendo-radialgauge-scale-labels>
+                </kendo-radialgauge-scale>
+            </kendo-radialgauge>
+        </div>
+        <div>
+            <kendo-radialgauge class="fuel" #radial [transitions]="true" [pointer]="{ value: fuel }"
+                [scale]="{ max: 1 }">
+                <kendo-radialgauge-scale [minorUnit]="0.25" [majorUnit]="0.5"
+                    [majorTicks]="{width: 2, size: 6, visible: true, color: '#FFFFFF'}"
+                    [minorTicks]="{size: 3, visible: true, color: '#FFFFFF'}" [min]="0" [max]="1" [startAngle]=90
+                    [endAngle]=180>
+                    <kendo-radialgauge-scale-labels color='#FFFFFF'>
+                    </kendo-radialgauge-scale-labels>
+                    <kendo-radialgauge-scale-ranges>
+                        <kendo-radialgauge-scale-range [from]="0" [to]="0.1" color="#c20000">
                         </kendo-radialgauge-scale-range>
-                        <kendo-radialgauge-scale-range [from]="210" [to]="230" color="#c20000">
+                        <kendo-radialgauge-scale-range [from]="0.11" [to]="0.5" color="none">
+                        </kendo-radialgauge-scale-range>
+                        <kendo-radialgauge-scale-range [from]="0.51" [to]="1" color="none">
+                        </kendo-radialgauge-scale-range>
+                    </kendo-radialgauge-scale-ranges>
+                </kendo-radialgauge-scale>
+            </kendo-radialgauge>
+        </div>
+        <div>
+            <kendo-radialgauge class="water-temperature" #radial [transitions]="true" [pointer]="{ value: water-temp }"
+                [scale]="{ max: 120 }">
+                <kendo-radialgauge-scale [minorUnit]="10" [majorUnit]="30"
+                    [majorTicks]="{width: 2, size: 6, visible: true, color: '#FFFFFF'}"
+                    [minorTicks]="{size: 3, visible: true, color: '#FFFFFF'}" [min]="60" [max]="120" [startAngle]=180
+                    [endAngle]=270>
+                    <kendo-radialgauge-scale-labels color='#FFFFFF'>
+                    </kendo-radialgauge-scale-labels>
+                    <kendo-radialgauge-scale-ranges>
+                        <kendo-radialgauge-scale-range [from]="60" [to]="110" color="none">
+                        </kendo-radialgauge-scale-range>
+                        <kendo-radialgauge-scale-range [from]="110" [to]="120" color="#c20000">
                         </kendo-radialgauge-scale-range>
                     </kendo-radialgauge-scale-ranges>
                 </kendo-radialgauge-scale>
