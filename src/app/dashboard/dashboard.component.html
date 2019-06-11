@@ -1,16 +1,16 @@
 <div id="example">
     <div id="gauge-container" class="hidden-on-narrow">
         <div class="rpm">
-                <kendo-radialgauge #radial [transitions]="true" [pointer]="{ value: rpm }" [scale]="{ max: 260 }">
-                        <kendo-radialgauge-scale [minorUnit]="1" [min]="0" [max]="6" [startAngle]=-45 [endAngle]=120>
-                            <kendo-radialgauge-scale-ranges>
-                                <kendo-radialgauge-scale-range [from]="4" [to]="5" color="#ffc700">
-                                </kendo-radialgauge-scale-range>
-                                <kendo-radialgauge-scale-range [from]="5" [to]="6" color="#c20000">
-                                </kendo-radialgauge-scale-range>
-                            </kendo-radialgauge-scale-ranges>
-                        </kendo-radialgauge-scale>
-                    </kendo-radialgauge>
+            <kendo-radialgauge #radial [transitions]="true" [pointer]="{ value: rpm }" [scale]="{ max: 260 }">
+                <kendo-radialgauge-scale [minorUnit]="1" [min]="0" [max]="6" [startAngle]=-45 [endAngle]=120>
+                    <kendo-radialgauge-scale-ranges>
+                        <kendo-radialgauge-scale-range [from]="4" [to]="5" color="#ffc700">
+                        </kendo-radialgauge-scale-range>
+                        <kendo-radialgauge-scale-range [from]="5" [to]="6" color="#c20000">
+                        </kendo-radialgauge-scale-range>
+                    </kendo-radialgauge-scale-ranges>
+                </kendo-radialgauge-scale>
+            </kendo-radialgauge>
         </div>
         <div class="kmH">
             <kendo-radialgauge #radial [transitions]="true" [pointer]="{ value: kmH }" [scale]="{ max: 260 }">
