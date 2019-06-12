@@ -42,10 +42,23 @@ ul {
 
 .blinker {
   font-size: 80px !important;
-  color: white;
+  color: #646464;
   
 }
 
 .blinker.on {
-  color: yellow;
+  animation-duration: 400ms;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+@keyframes blink {
+  from {
+    color: #646464;
+  }
+  to {
+    color: #ffc700;
+  }
 }
