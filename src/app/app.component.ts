@@ -46,13 +46,16 @@ export class AppComponent implements OnInit, OnDestroy {
     this.dataSubscriber = this.dataService.getData()
       .subscribe((result: CarData) => {
         this.model = result;
+        this.model.rpm/=1000;
+        this.model.fuel/=100;
+        console.log(result);
       },
       error => {
         console.log(error);
       });
 
       // (tlazarov) TODO: Remove usage of dummy data after finishing
-      this.constructDummyModel();
+     //this.constructDummyModel();
   }
 
   ngOnDestroy(): void {
@@ -64,14 +67,14 @@ export class AppComponent implements OnInit, OnDestroy {
     this.model.air_humidity = 0.01;
     this.model.air_temp = 401.020000;
     this.model.engine_temp = 90.600000;
-    this.model.engine_warning = "warning:)";
-    this.model.fog_lamp = true;
+    this.model.engine_warning = 'P0000';
+    this.model.fog_lamp = false;
     this.model.fuel = 90;
     this.model.gps_latitude = 75.124397;
     this.model.gps_longitude = 0.000000;
-    this.model.handbrake = true;
-    this.model.hazard_lamp = false;
-    this.model.rpm = 2333;
+    this.model.handbrake = false;
+    this.model.hazard_lamp = true;
+    this.model.rpm = 350;
     this.model.speed = 120;
   }
 }

@@ -1,8 +1,8 @@
 <div id="example">
     <div id="gauge-container" class="hidden-on-narrow">
         <div>
-            <kendo-radialgauge class="rpm" #radial [transitions]="true" [pointer]="{ value: carData.rpm/1000 }"
-                [scale]="{ max: 260 }">
+            <kendo-radialgauge class="rpm" #radial [transitions]="true" [pointer]="{ value: carData.rpm }"
+                [scale]="{ max: 6 }">
                 <kendo-radialgauge-scale [minorUnit]="1" [minorUnit]="0.2" [min]="0" [max]="6"
                     [majorTicks]="{width: 1, size: 7, visible: true, color: '#FFFFFF' }"
                     [minorTicks]="{size: 5, visible: true, color: '#FFFFFF' }" [startAngle]=-45 [endAngle]=120>
@@ -31,7 +31,7 @@
             </kendo-radialgauge>
         </div>
         <div>
-            <kendo-radialgauge class="fuel" #radial [transitions]="true" [pointer]="{ value: carData.fuel/100 }"
+            <kendo-radialgauge class="fuel" #radial [transitions]="true" [pointer]="{ value: carData.fuel }"
                 [scale]="{ max: 1 }">
                 <kendo-radialgauge-scale [minorUnit]="0.25" [majorUnit]="0.5"
                     [majorTicks]="{width: 2, size: 6, visible: true, color: '#FFFFFF'}"

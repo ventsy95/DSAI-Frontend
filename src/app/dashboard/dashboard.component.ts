@@ -1,5 +1,6 @@
 import { Component, OnInit, AfterViewInit, Input } from '@angular/core';
 import * as $ from 'jquery/dist/jquery.min.js';
+import { CarData } from 'src/models/cardata';
 
 declare var kendo: any;
 
@@ -9,7 +10,7 @@ declare var kendo: any;
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit, AfterViewInit {
-  @Input() carData: any;
+  @Input() carData: CarData;
 
   public value: number = 30;
 
