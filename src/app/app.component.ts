@@ -17,7 +17,6 @@ export class AppComponent implements OnInit, OnDestroy {
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
-
     this.dataService.onConnect()
       .pipe(first())
       .subscribe(result => {
