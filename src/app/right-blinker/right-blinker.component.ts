@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'right-blinker',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./right-blinker.component.scss']
 })
 export class RightBlinkerComponent implements OnInit {
-  isRightBlinkerOn:Boolean = true;
+  @Input() isRightBlinkerOn:Boolean = false;
 
   constructor() { }
 

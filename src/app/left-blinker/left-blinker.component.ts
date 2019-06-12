@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'left-blinker',
@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./left-blinker.component.scss']
 })
 export class LeftBlinkerComponent implements OnInit {
-  isLeftBlinkerOn:Boolean = true;
-  
+  @Input() isLeftBlinkerOn:Boolean = false;
+
   constructor() { }
 
   ngOnInit() {
