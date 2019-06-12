@@ -28,7 +28,7 @@ import { RightBlinkerComponent } from './right-blinker/right-blinker.component';
   ],
   imports: [
     BrowserModule,
-    SocketIoModule.forRoot(config)
+    SocketIoModule.forRoot(config),
     InputsModule,
     BrowserAnimationsModule,
     GridModule,
