@@ -17,36 +17,29 @@ html { font-size: 14px; font-family: Arial, Helvetica, sans-serif; }
     background: transparent url("../../assets/images/car-dashboard.png") no-repeat 50% 50%;
 }
 
-.k-gauge {
+.k-gauge{
     float: left;
-    width: 220px;
 }
 
-#rpm {
+.rpm{
     width: 142px;
     height: 147px;
     margin: 85px 0 0 38px;
 }
 
 .kmH{
-    margin-left: 32.3%;
-    margin-top: 10.5%;
-}
-
-#kmh {
     width: 216px;
     height: 216px;
     margin: 57px 0 0 20px;
 }
 
-#fuel {
+.fuel {
     width: 77px;
     height: 84px;
-
     margin: 90px 0 0 68px;
 }
 
-#water-temprature {
+.water-temperature {
     width: 84px;
     height: 80px;
     margin: -7px 0 0 62px;
