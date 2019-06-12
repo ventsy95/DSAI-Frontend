@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, Input } from '@angular/core';
 import * as $ from 'jquery/dist/jquery.min.js';
 
 declare var kendo: any;

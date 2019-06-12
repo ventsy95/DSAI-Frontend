@@ -15,6 +15,9 @@ import { TestComponent } from './test/test.component';
 import { GaugesModule } from '@progress/kendo-angular-gauges';
 import { LeftBlinkerComponent } from './left-blinker/left-blinker.component';
 import { RightBlinkerComponent } from './right-blinker/right-blinker.component';
+import { EngineWarningComponent } from './engine-warning/engine-warning.component';
+import { FogLampComponent } from './fog-lamp/fog-lamp.component';
+import { HandbrakeComponent } from './handbrake/handbrake.component';
 
 
 
@@ -24,7 +27,10 @@ import { RightBlinkerComponent } from './right-blinker/right-blinker.component';
     DashboardComponent,
     TestComponent,
     LeftBlinkerComponent,
-    RightBlinkerComponent
+    RightBlinkerComponent,
+    EngineWarningComponent,
+    FogLampComponent,
+    HandbrakeComponent
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./right-blinker.component.scss']
 })
 export class RightBlinkerComponent implements OnInit {
+  @Input() isHazardLampOn: Boolean = false;
   @Input() isRightBlinkerOn:Boolean = false;
 
   constructor() { }
