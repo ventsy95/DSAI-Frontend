@@ -8,7 +8,7 @@
   <fog-lamp [isFogLampOn]="model.fog_lamp"></fog-lamp>
   
 
-  <dashboard></dashboard>
+  <dashboard [carData]="model"></dashboard>
   <div style="color: white">
     <div>Air humidity: {{model.air_humidity}}</div>
     <div>Air temp: {{model.air_temp}}</div>
