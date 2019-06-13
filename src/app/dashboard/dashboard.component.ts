@@ -10,13 +10,13 @@ declare var kendo: any;
 })
 export class DashboardComponent implements OnInit, AfterViewInit {
 
-  public value: number = 30;
+  public kmH: number = 30;
 
   constructor() { }
 
   ngOnInit() {
     setInterval(() => {
-      this.value += 50; 
+      this.kmH += 50; 
       }, 3000);
    /* $(document).ready(() => {
       this.animateInterval = null;
