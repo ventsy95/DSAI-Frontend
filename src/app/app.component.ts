@@ -69,12 +69,12 @@ export class AppComponent implements OnInit, OnDestroy {
     this.model.engine_temp = 90.600000;
     this.model.engine_warning = 'P0000';
     this.model.fog_lamp = false;
-    this.model.fuel = 90;
+    this.model.fuel =0.9;
     this.model.gps_latitude = 42.608219;
     this.model.gps_longitude = 23.603122;
     this.model.handbrake = false;
     this.model.hazard_lamp = true;
-    this.model.rpm = 350;
+    this.model.rpm = 3.5;
     this.model.speed = 120;
   }
 }
