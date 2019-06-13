@@ -19,7 +19,8 @@ import { EngineWarningComponent } from './engine-warning/engine-warning.componen
 import { FogLampComponent } from './fog-lamp/fog-lamp.component';
 import { HandbrakeComponent } from './handbrake/handbrake.component';
 
-
+import { AgmCoreModule } from '@agm/core';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { HandbrakeComponent } from './handbrake/handbrake.component';
     RightBlinkerComponent,
     EngineWarningComponent,
     FogLampComponent,
-    HandbrakeComponent
+    HandbrakeComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +41,10 @@ import { HandbrakeComponent } from './handbrake/handbrake.component';
     BrowserAnimationsModule,
     GridModule,
     ButtonsModule,
-    GaugesModule
+    GaugesModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBm4L8oKSEWoNz5aPXcp5yBip_MCHJQQdE'
+    })
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
