@@ -1,5 +1,6 @@
 .app-wrapper {
   position: relative;
+  overflow: auto;
 }
 
 left-blinker {
@@ -36,3 +37,4 @@ handbrake {
   top: 43vh;
   left: 27vw;
 }
+
