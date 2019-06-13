@@ -1,4 +1,6 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, Input, ElementRef } from '@angular/core';
+
+declare var H: any;
 
 @Component({
   selector: 'map',
@@ -7,7 +9,42 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 })
 export class MapComponent  {
 
-  constructor() { }
+  @Input() lat : number;
+  @Input() lng : number;
+
+  private platform: any;
+
+  @ViewChild("map", { static: false })
+  public mapElement: ElementRef;
+
+  public constructor() {
+      this.platform = new H.service.Platform({
+          "app_id": "rDTiyvI6tZ4rmoEBOSMH",
+          "app_code": "0E04-ZSVqpG81XwqshvEsg"
+      });
+  }
+
+  public ngOnInit() { }
+
+  public ngAfterViewInit() {
+      let defaultLayers = this.platform.createDefaultLayers();
+      let map = new H.Map(
+          this.mapElement.nativeElement,
+          defaultLayers.normal.transit,
+          {
+              zoom: 13,
+              center: { lat: this.lat, lng: this.lng }
+          }
+      );
+
+      let startMarker = new H.map.Marker({
+        lat: this.lat,
+        lng: this.lng
+      });
+      map.addObjects([startMarker]);
+
+  }
+  
   /*
   @ViewChild('gmap', { read: true, static: false }) gmapElement: any;
   map: google.maps.Map;

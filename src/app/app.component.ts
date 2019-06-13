@@ -55,7 +55,7 @@ export class AppComponent implements OnInit, OnDestroy {
       });
 
       // (tlazarov) TODO: Remove usage of dummy data after finishing
-     //this.constructDummyModel();
+     this.constructDummyModel();
   }
 
   ngOnDestroy(): void {
@@ -70,8 +70,8 @@ export class AppComponent implements OnInit, OnDestroy {
     this.model.engine_warning = 'P0000';
     this.model.fog_lamp = false;
     this.model.fuel = 90;
-    this.model.gps_latitude = 75.124397;
-    this.model.gps_longitude = 0.000000;
+    this.model.gps_latitude = 42.608219;
+    this.model.gps_longitude = 23.603122;
     this.model.handbrake = false;
     this.model.hazard_lamp = true;
     this.model.rpm = 350;
