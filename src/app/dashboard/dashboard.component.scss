@@ -9,41 +9,91 @@ html { font-size: 14px; font-family: Arial, Helvetica, sans-serif; }
 @import 'https://kendo.cdn.telerik.com/2019.2.514/styles/kendo.mobile.all.min.css';
 
 #gauge-container {
-    margin: 0 auto;
     overflow: hidden;
-    width: 614px;
-    height: 324px;
-
-    background: transparent url("../../assets/images/car-dashboard.png") no-repeat 50% 50%;
+    width: 98vw;
+    height: 160vh;
+    background: transparent url("../../assets/images/dash.png") no-repeat;
+    background-size: 100% 55% 
 }
+
 
 .k-gauge{
     float: left;
 }
 
 .rpm{
-    width: 142px;
-    height: 147px;
-    margin: 85px 0 0 38px;
+    width: 44vw;
+    height: 44vh;
+    margin-top: 12.6%;
+    margin-left: 5vw;
 }
 
 .kmH{
-    width: 216px;
-    height: 216px;
-    margin: 57px 0 0 20px;
+    width: 45vw;
+    height: 45vh;
+    margin-top: 12.5%;
+    margin-left: -0.5vw;
     color: white;
 }
 
 .fuel {
-    width: 77px;
-    height: 84px;
-    margin: 90px 0 0 68px;
+    width: 20vw;
+    height: 20vh;
+    margin-left: 30vw;
+    margin-top: -18vw;
 }
 
 .water-temperature {
-    width: 84px;
-    height: 80px;
-    margin: -7px 0 0 62px;
+    width: 16vw;
+    height: 16vh;
+    margin-left: 23.5vw;
+    margin-top: -8vw;
 }
 
+#km, #rpm, #time, #airTemp, #airHum{
+    position: absolute;
+    color:white;
+    font-family:'Ubuntu';
+    font-size: 1.2em;
+}
 
+.gas, .temp{
+    position: absolute;
+}
+
+.temp{
+    width: 3%;
+    margin-top: 42vh;
+    margin-left: 81vw;
+}
+
+.gas{
+    width: 2%;
+    margin-top: 55vh;
+    margin-left: 75vw;
+}
+
+#rpm{
+    margin-top: 40vh;
+    margin-left: 115vh;
+}
+
+#km{
+    margin-top: 60vh;
+    margin-left: 21vw;
+}
+
+#time{
+    margin-top: 18vh;
+    margin-left: 57vw;
+}
+
+#airTemp{
+    margin-top: 18vh;
+    margin-left: 36vw;
+}
+
+#airHum{
+    margin-top: 67vh;
+    margin-left: 43vw;
+}

@@ -6,10 +6,11 @@
   <engine-warning [warningCode]="model.engine_warning"></engine-warning>
   <handbrake [ishandbrakeUp]="model.handbrake"></handbrake>
   <fog-lamp [isFogLampOn]="model.fog_lamp"></fog-lamp>
-  <!-- <test-map [lat]="model.gps_latitude" [lng]="model.gps_longitude"></test-map> -->
   <map [lat]="model.gps_latitude" [lng]="model.gps_longitude"></map>
 
-  <dashboard [carData]="model"></dashboard>
+  <dashboard id=dash [carData]="model"></dashboard>
+  <!-- <test-map [lat]="model.gps_latitude" [lng]="model.gps_longitude"></test-map> -->
+
   <div style="color: white">
     <div>Air humidity: {{model.air_humidity}}</div>
     <div>Air temp: {{model.air_temp}}</div>

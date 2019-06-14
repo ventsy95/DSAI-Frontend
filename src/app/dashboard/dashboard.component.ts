@@ -11,29 +11,30 @@ declare var kendo: any;
 })
 export class DashboardComponent implements OnInit, AfterViewInit {
   @Input() carData: CarData;
+  now:number;
 
-  public value: number = 30;
-
-  constructor() { }
+  constructor() { 
+    this.now = Date.now();
+    setInterval(() => {
+      this.now = Date.now();
+    }, 1000*30);
+  }
 
   ngOnInit() {
-    setInterval(() => {
-      this.value += 50;
-    }, 3000);
-    /* $(document).ready(() => {
-       this.animateInterval = null;
- 
-       this.createDashboard();
-       this.animateDashboard();
- 
-       $(document).bind("kendo:skinChange", (e) => {
-         this.createDashboard();
-       });
- 
-       $(document).bind("kendo:pageUnload", (e) => {
-         clearInterval(this.animateInterval);
-       });
-     });*/
+   /* $(document).ready(() => {
+      this.animateInterval = null;
+
+      this.createDashboard();
+      this.animateDashboard();
+
+      $(document).bind("kendo:skinChange", (e) => {
+        this.createDashboard();
+      });
+
+      $(document).bind("kendo:pageUnload", (e) => {
+        clearInterval(this.animateInterval);
+      });
+    });*/
   }
 
   ngAfterViewInit() {
