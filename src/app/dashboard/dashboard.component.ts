@@ -11,8 +11,14 @@ declare var kendo: any;
 })
 export class DashboardComponent implements OnInit, AfterViewInit {
   @Input() carData: CarData;
+  now:number;
 
-  constructor() { }
+  constructor() { 
+    this.now = Date.now();
+    setInterval(() => {
+      this.now = Date.now();
+    }, 1000*30);
+  }
 
   ngOnInit() {
    /* $(document).ready(() => {

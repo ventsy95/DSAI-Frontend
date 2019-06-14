@@ -50,7 +50,7 @@ html { font-size: 14px; font-family: Arial, Helvetica, sans-serif; }
     margin-top: -8vw;
 }
 
-#km, #rpm{
+#km, #rpm, #time, #airTemp, #airHum{
     position: absolute;
     color:white;
     font-family:'Ubuntu';
@@ -81,4 +81,19 @@ html { font-size: 14px; font-family: Arial, Helvetica, sans-serif; }
 #km{
     margin-top: 60vh;
     margin-left: 21vw;
+}
+
+#time{
+    margin-top: 18vh;
+    margin-left: 57vw;
+}
+
+#airTemp{
+    margin-top: 18vh;
+    margin-left: 36vw;
+}
+
+#airHum{
+    margin-top: 67vh;
+    margin-left: 43vw;
 }

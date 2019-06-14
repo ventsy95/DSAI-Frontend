@@ -3,6 +3,9 @@
     <div id="rpm">x1000 RPM</div>
     <img class="gas" src="../../assets/images/gas-station.png" alt="">
     <img class="temp" src="../../assets/images/water-temp.png" alt="">
+    <div id="time">{{now | date:'h:mm a'}}</div>
+    <div id="airTemp">{{carData.air_temp}} ℃</div>
+    <div id="airHum">Air humidity: {{carData.air_humidity}}%</div>
     <div>
         <kendo-radialgauge class="kmH" #radial [transitions]="true"
             [pointer]="{ value: carData.speed, cap: { size: 0.02, color: '#001540'},length: 1, color: '#0080FF' }"

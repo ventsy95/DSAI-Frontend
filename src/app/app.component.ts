@@ -65,7 +65,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
   constructDummyModel(): void {
     this.model.air_humidity = 0.01;
-    this.model.air_temp = 401.020000;
+    this.model.air_temp = 40.020000;
     this.model.engine_temp = 90.600000;
     this.model.engine_warning = 'P0000';
     this.model.fog_lamp = false;
