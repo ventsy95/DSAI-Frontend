@@ -1,0 +1,28 @@
+<!--The content below is only a mock-up for the car dashboard.-->
+<div class="app-wrapper">
+  <left-blinker [isLeftBlinkerOn]="false"  [isHazardLampOn]="model.hazard_lamp"></left-blinker>
+  <right-blinker [isRightBlinkerOn]="true" [isHazardLampOn]="model.hazard_lamp"></right-blinker>
+
+  <engine-warning [warningCode]="model.engine_warning"></engine-warning>
+  <handbrake [ishandbrakeUp]="model.handbrake"></handbrake>
+  <fog-lamp [isFogLampOn]="model.fog_lamp"></fog-lamp>
+  <map [lat]="model.gps_latitude" [lng]="model.gps_longitude"></map>
+
+  <dashboard id=dash [carData]="model"></dashboard>
+  <!-- <test-map [lat]="model.gps_latitude" [lng]="model.gps_longitude"></test-map> -->
+
+  <div style="color: white">
+    <div>Air humidity: {{model.air_humidity}}</div>
+    <div>Air temp: {{model.air_temp}}</div>
+    <div>Engine temp: {{model.engine_temp}}</div>
+    <div>Engine warning: {{model.engine_warning}}</div>
+    <div>Fog lamp: {{model.fog_lamp}}</div>
+    <div>Fuel: {{model.fuel}}</div>
+    <div>GPS latitude: {{model.gps_latitude}}</div>
+    <div>GPS longitude: {{model.gps_longitude}}</div>
+    <div>Handbrake: {{model.handbrake}}</div>
+    <div>Hazard lamp: {{model.hazard_lamp}}</div>
+    <div>Rpm: {{model.rpm}}</div>
+    <div>Speed: {{model.speed}}</div>
+  </div>
+</div>

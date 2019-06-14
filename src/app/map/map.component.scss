@@ -1,0 +1,23 @@
+.gmap{
+    position: absolute;
+    margin-top: 22vh;
+    margin-left: 38.7vw;
+}
+
+.invert {
+	filter: invert(100%);
+	-webkit-filter: invert(100%);
+	position: absolute;
+    z-index:0;
+}
+
+.box{
+    position: absolute;
+    margin-top: 21.9vh;
+    margin-left: 38.6vw;
+    width: 300px;
+    height: 390px;
+    -webkit-box-shadow: inset 0px 0px 23px 25px rgba(3,7,18,1);
+    -moz-box-shadow: inset 0px 0px 23px 25px rgba(3,7,18,1);
+    box-shadow: inset 0px 0px 23px 25px rgba(3,7,18,1);
+}
